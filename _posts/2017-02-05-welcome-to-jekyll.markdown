@@ -5,10 +5,6 @@ date:   2017-02-05 00:20:45 -0500
 categories: jekyll update
 ---
 
-My research covers [neuroimaging]() and [high-dimensional statistics]
-
-
-
 
 {% highlight ruby %}
 def print_hi(name)
