@@ -304,7 +304,7 @@ table
     border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
 
     /* Center */
-    margin-left: auto;
+    margin-left: 40;
     margin-right: auto;
     }
     

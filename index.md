@@ -13,6 +13,7 @@
 
 #jewellthomas.github.io
 
-##[contact](mailto:jewell.thomas@gmail.com) my consulting company
-
+|	|	|	|
+|-------|-------|-------|
+|[research](https://scholar.google.com/citations?user=4YWx5boAAAAJ&hl=en)|[cv](assets/cv.pdf)|[consulting company](mailto:jewell.thomas@gmail.com)|
 

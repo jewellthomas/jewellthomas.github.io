@@ -32,17 +32,21 @@ SRC=$(wildcard *.md wildcard */*.md)
 # ## CSL stylesheet (located in the csl folder of the PREFIX directory).
 # CSL = apsa
 
+
 HTML=$(SRC:%.md=_site/%.html)
 
-all:	
-	mkdir -p _site
-	cp -R static _site/.
-	$(HTML) 
+
+all:	$(HTML) 
 
 html:	clean $(HTML)
 
+
 _site/%.html : %.md
+	
+	@mkdir -p $(@D)
 	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S -o $@ $<
+	cp -R static _site/.
+	cp -R assets _site/.
 
 clean:
 	rm -rf _site
