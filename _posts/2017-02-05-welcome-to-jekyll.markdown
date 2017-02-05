@@ -7,6 +7,9 @@ categories: jekyll update
 
 My research covers [neuroimaging]() and [high-dimensional statistics]
 
+
+
+
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
