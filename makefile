@@ -33,35 +33,16 @@ SRC=$(wildcard *.md wildcard */*.md)
 # CSL = apsa
 
 HTML=$(SRC:%.md=_site/%.html)
-PDFS=$(SRC:%.md=_site/BUILD/pdf/%.pdf)
-TEX=$(SRC:%.md=_site/BUILD/tex/%.tex)
 
+all:	
+	mkdir -p _site
+	cp -R static _site/.
+	$(HTML) 
 
-all:	$(PDFS) $(HTML) $(TEX)
-
-pdf:	clean $(PDFS)
 html:	clean $(HTML)
-tex:	clean $(TEX)
-
 
 _site/%.html : %.md
-	
-	@mkdir -p $(@D)
 	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S -o $@ $<
-	cp -R static _site/.
-	
-
-_site/BUILD/tex/%.tex : %.md
-	
-	@mkdir -p $(@D)
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w latex -s -S -o $@ $<
-	
-
-_site/BUILD/pdf/%.pdf : %.md
-	
-	@mkdir -p $(@D)
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -s -S -o $@ $<
-	
 
 clean:
 	rm -rf _site
