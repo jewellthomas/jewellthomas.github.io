@@ -34,7 +34,6 @@ release: build
 		git remote add upstream 'https://github.com/jewellthomas/pages.git' && \
 		git fetch --depth=1 upstream gh-pages && \
 		git reset upstream/gh-pages && \
-		echo "$(SITE_DOMAIN)" > CNAME && \
 		git add -A . && \
 		git commit -m "Release $(GIT_VERSION)" && \
 		git push upstream HEAD:gh-pages
