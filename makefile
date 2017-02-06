@@ -31,7 +31,7 @@ build:
 release: build
 	@cd _output && \
 		git init && \
-		git remote add upstream 'https://github.com/jewellthomas/jewellthomas.github.io.git' && \
+		git remote add upstream 'https://github.com/jewellthomas/pages.git' && \
 		git fetch --depth=1 upstream gh-pages && \
 		git reset upstream/gh-pages && \
 		echo "$(SITE_DOMAIN)" > CNAME && \
