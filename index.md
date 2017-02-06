@@ -14,6 +14,6 @@
 jewellthomas.github.io
 ----------------------
 
-|-------|-------|-------|
-|[research](https://scholar.google.com/citations?user=4YWx5boAAAAJ&hl=en)|[cv](assets/cv.pdf)|[consulting](mailto:jewell.thomas@gmail.com)|
+|-------|-------|-------|------|
+|[papers](https://scholar.google.com/citations?user=4YWx5boAAAAJ&hl=en)|[cv](assets/cv.pdf)|[notes](/notes.html)|[consulting](mailto:jewell.thomas@gmail.com)|
 
