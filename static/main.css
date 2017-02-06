@@ -38,12 +38,16 @@
 /* Pandoc header DIV. Contains .title, .author and .date. Comes before div#TOC. 
    Only appears if one of those three are in the document.
 */
+/*
 
+
+*/
 div#header, header
     {
     /* Put border on bottom. Separates it from TOC or body that comes after it. */
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
+
     }
 
 .title /* Pandoc title header (h1.title) */
@@ -86,6 +90,7 @@ h1, h2, h3, h4, h5, h6
     /* font-family: "Liberation Serif", "Georgia", "Times New Roman", serif; /* Serif headers */
 
     page-break-after: avoid; /* Firefox, Chrome, and Safari do not support the property value "avoid" */
+    text-align: center;
 }
 
 /* Pandoc with --section-divs option */
@@ -299,12 +304,12 @@ table
     {
     border-collapse: collapse;
     border-spacing: 0; /* IE 6 */
-
+    font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */      
     border-bottom: 2pt solid #000;
     border-top: 2pt solid #000; /* The caption on top will not have a bottom-border */
 
     /* Center */
-    margin-left: 40;
+    margin-left: auto;
     margin-right: auto;
     }
     
