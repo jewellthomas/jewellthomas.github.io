@@ -100,7 +100,11 @@ div div, section section /* Nested sections */
     margin-left: 2em; /* This will increasingly indent nested header sections */
     }
 
-p {}
+p {
+   font-family: "Helvetica Neue", Helvetica, "Liberation Sans", Calibri, Arial, sans-serif; /* Sans-serif headers */
+   text-align: center;
+
+}
 
 blockquote
     { 

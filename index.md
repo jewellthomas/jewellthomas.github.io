@@ -11,8 +11,10 @@
 
 </script>
 
-jewellthomas.github.io
+black text white background
 ----------------------
+
+research and development
 
 |-------|-------|------|
 |[papers](https://scholar.google.com/citations?user=4YWx5boAAAAJ&hl=en)|[cv](assets/cv.pdf)|[consulting](mailto:jewell.thomas@gmail.com)|
